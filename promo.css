@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.promocion-grid-2024 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.promocion-item-2024 {
+    cursor: pointer;
+    text-align: center;
+}
+
+.promocion-item-2024 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.search-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.result-display {
+    margin-top: 20px;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+footer {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}

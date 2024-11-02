@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo 2024 - Instituto Franklin Delano Roosevelt</title>
+    <link rel="stylesheet" href="promo.css">
+</head>
+<body>
+    <header>
+        <h1>Instituto Franklin Delano Roosevelt</h1>
+        <nav>
+            <ul>
+                <li><a href="FDR.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Nuestra Promo 2024</h2>
+            <div class="promocion-grid-2024">
+                <!-- Elementos de promoción -->
+                <div class="promocion-item-2024" onclick="mostrarDetalles('Kevin Peña', 'Persigue tus sueños.')">
+                    <img src="Kevin.jpg" alt="Kevin Peña">
+                    <p>Kevin Peña</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('Andrea Benitez', 'Tu esfuerzo te trajo hasta aquí; sigue adelante y sorpréndete a ti mismo.')">
+                    <img src="Andrea1.jpg" alt="Andrea Benitez">
+                    <p>Andrea Benitez</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('arnoldo', 'El primer paso siempre es el más difícil.')">
+                    <img src="arnoldo.jpg" alt="arnoldo">
+                    <p>Arnoldo Alvarenga</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('Ashley', 'Hoy es un buen día para empezar a construir el futuro que sueñas.')">
+                    <img src="ashley.jpg" alt="Ashley">
+                    <p>Ashley Escalante</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('astrid', 'El éxito no es inmediato, pero cada paso cuenta.')">
+                    <img src="astrid.jpg" alt="Astrid">
+                    <p>Astrid Chavez</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('Kenny', 'Sé fiel a ti mismo, y todo lo demás encontrará su lugar.')">
+                    <img src="Azaeth1.jpg" alt="Kenny">
+                    <p>Kenny Murcia</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('Daniel', 'Con dedicación y paciencia, los grandes logros llegan.')">
+                    <img src="Batdonez.jpg" alt="Daniel">
+                    <p>Daniel Ordoñez</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('Delvin', 'No temas a los errores; ellos también te enseñan el camino.')">
+                    <img src="Buakaw.jpg" alt="Delvin">
+                    <p>Delvin Narvaez</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('Mario', 'Lo que aprendiste hasta ahora es la base de lo que puedes construir.')">
+                    <img src="Coquito.jpg" alt="Mario">
+                    <p>Mario Urbina</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('Daniela', 'Cada obstáculo es una oportunidad para crecer.')">
+                    <img src="daniela.jpg" alt="Daniela">
+                    <p>Daniela Rivera</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('elsa', 'Tienes el potencial para cambiar el mundo, ¡nunca lo dudes.')">
+                    <img src="elsa.jpg" alt="elsa">
+                    <p>Elsa Gallardo</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('Erwin', 'Confía en ti y en lo que puedes aportar a los demás.')">
+                    <img src="erwin.jpg" alt="Erwin">
+                    <p>Erwin Ordoñez</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('Jostin', 'Las metas grandes comienzan con pequeños pasos diarios.')">
+                    <img src="jostin.jpg" alt="Jostin">
+                    <p>Jostin Chavez</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('kritza', 'El esfuerzo constante te lleva a donde quieres estar.')">
+                    <img src="kritza.jpg" alt="kritza">
+                    <p>Kritza Aguirre</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('Lohany', 'Si hoy parece difícil, recuerda que el futuro será mejor.')">
+                    <img src="loha.jpg" alt="Lohany">
+                    <p>Lohany Ortiz</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('meylin', 'Este es tu momento para empezar a hacer tus propios sueños realidad.')">
+                    <img src="meylin.jpg" alt="meylin">
+                    <p>Meylin Alvarenga</p>
+                </div>
+                <div class="promocion-item-2024" onclick="mostrarDetalles('Alex', 'No todos los días son fáciles, pero cada día es una nueva oportunidad.')">
+                    <img src="midoc.jpg" alt="ALEX">
+                    <p>Alex Mejia</p>
+                </div>
+            
+            </div>
+        </section>
+
+        <section class="search-section">
+            <h3>Busca a un compañero</h3>
+            <input type="text" id="search-input" placeholder="Ingresa el nombre">
+            <button onclick="buscarEstudiante()">Buscar</button>
+            <div class="result-display" id="result-display" style="display: none;">
+                <h4 id="result-name"></h4>
+                <img id="result-img" src="" alt="Foto del compañero">
+                <p id="result-phrase"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Instituto Franklin Delano Roosevelt Puerto Cortés</p>
+    </footer>
+
+    <script>
+        const estudiantes = {
+            "Kevin Peña": {
+                img: "Kevin.jpg",
+                frase: "Persigue tus sueños."
+            },
+            // Resto de estudiantes...
+        }
+
+        function buscarEstudiante() {
+            const nombre = document.getElementById('search-input').value.trim();
+            const resultado = document.getElementById('result-display');
+            
+            if (estudiantes[nombre]) {
+                document.getElementById('result-name').textContent = nombre;
+                document.getElementById('result-img').src = estudiantes[nombre].img;
+                document.getElementById('result-phrase').textContent = estudiantes[nombre].frase;
+                resultado.style.display = 'block';
+            } else {
+                resultado.style.display = 'none';
+            }
+        }
+
+        function mostrarDetalles(nombre, frase) {
+            const resultado = document.getElementById('result-display');
+            const img = estudiantes[nombre].img;
+
+            document.getElementById('result-name').textContent = nombre;
+            document.getElementById('result-img').src = img;
+            document.getElementById('result-phrase').textContent = frase;
+            resultado.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripciones - Instituto Franklin Delano Roosevelt</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5dc;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 248, 225, 0.9); /* Fondo semi-transparente */
+            border: 2px solid #8e735b;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden; /* Para evitar desbordamientos */
+        }
+        .container::before {
+            content: "";
+            background-image: url('https://i.pinimg.com/originals/b8/2b/06/b82b063524cc2508a910ecda1ddd75f8.png'); /* Cambia la URL por la de tu imagen */
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1; /* Ajusta la opacidad según sea necesario */
+            z-index: 0; /* Mantiene la imagen detrás del contenido */
+        }
+        h1 {
+            color: #8e735b;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative; /* Para asegurar que el texto esté encima del fondo */
+            z-index: 1;
+        }
+        h2 {
+            color: #6c5b4e;
+            margin-top: 30px;
+            position: relative; /* Para asegurar que el texto esté encima del fondo */
+            z-index: 1;
+        }
+        p {
+            text-indent: 20px;
+            margin-bottom: 15px;
+            position: relative; /* Para asegurar que el texto esté encima del fondo */
+            z-index: 1;
+        }
+        ul, ol {
+            margin-left: 40px;
+            text-indent: 0;
+            position: relative; /* Para asegurar que el texto esté encima del fondo */
+            z-index: 1;
+        }
+        .upload-section {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #eae5d1;
+            border: 1px solid #8e735b;
+            border-radius: 5px;
+            position: relative; /* Para asegurar que el texto esté encima del fondo */
+            z-index: 1;
+        }
+        .upload-section input[type="file"] {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Inscripciones Abiertas</h1>
+    
+    <h2>¡Bienvenido al Instituto Franklin Delano Roosevelt!</h2>
+    <p>
+        Estamos encantados de que estés considerando unirte a nuestra comunidad educativa. A continuación, te proporcionamos 
+        toda la información necesaria para el proceso de inscripción para el ciclo académico 2024.
+    </p>
+
+    <h2>Requisitos de Inscripción</h2>
+    <p>
+        Para asegurarte de que tu inscripción se procese sin inconvenientes, por favor, reúne los siguientes documentos:
+    </p>
+    <ul>
+        <li>Copia de la tarjeta de identidad.</li>
+        <li>Certificado de estudios previos (último grado cursado).</li>
+        <li>Dos fotografías tamaño carnet.</li>
+        <li>Formulario de inscripción (disponible en nuestras oficinas o descarga en línea).</li>
+    </ul>
+
+    <h2>Proceso de Inscripción</h2>
+    <p>
+        Te invitamos a seguir estos pasos para completar tu inscripción:
+    </p>
+    <ol>
+        <li>Reúne todos los documentos requeridos.</li>
+        <li>Completa el formulario de inscripción, disponible en nuestras oficinas o [aquí](#) para descarga.</li>
+        <li>Visita nuestras instalaciones en Puerto Cortés para entregar tus documentos.</li>
+        <li>Realiza el pago de la matrícula en el departamento de finanzas.</li>
+    </ol>
+
+    <div class="upload-section">
+        <h2>Sube tus Documentos</h2>
+        <p>
+            Utiliza los siguientes formularios para subir los documentos requeridos:
+        </p>
+        
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="identity">Copia de la tarjeta de identidad:</label><br>
+            <input type="file" id="identity" name="identity" accept="image/*" required><br><br>
+
+            <label for="certificate">Certificado de estudios previos:</label><br>
+            <input type="file" id="certificate" name="certificate" accept="image/*" required><br><br>
+
+            <label for="photos">Fotografías tamaño carnet:</label><br>
+            <input type="file" id="photos" name="photos" accept="image/*" multiple required><br><br>
+
+            <input type="submit" value="Enviar Documentos">
+        </form>
+    </div>
+
+    <h2>Beneficios de Inscribirte con Nosotros</h2>
+    <p>
+        Al unirte al Instituto Franklin Delano Roosevelt, disfrutarás de:
+    </p>
+    <ul>
+        <li>Acceso a modernas instalaciones educativas y tecnológicas.</li>
+        <li>Metodologías de enseñanza actualizadas que fomentan el aprendizaje activo.</li>
+        <li>Oportunidades de desarrollo personal y profesional a través de talleres y conferencias.</li>
+        <li>Una comunidad estudiantil inclusiva y diversa.</li>
+    </ul>
+
+    <div class="contact-info">
+        <h2>Contacto para Más Información</h2>
+        <p>
+            Si tienes dudas o necesitas asistencia adicional, no dudes en ponerte en contacto con nuestro equipo:
+        </p>
+        <p><strong>Email:</strong> info@institutofdr.edu.hn</p>
+        <p><strong>Teléfono:</strong> +504 1234-5678</p>
+        <p><strong>Dirección:</strong> Avenida Central, Puerto Cortés, Honduras</p>
+    </div>
+</div>
+
+</body>
+</html>
+
+
